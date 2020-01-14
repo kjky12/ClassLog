@@ -10,15 +10,15 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // 사용 방법 예시
-  #include "Log.h"
+  	#include "Log.h"
 
-void Temp()
-{
-  CLog *pLog = NULL;
-	pLog = CLog::Instance();
+	void Temp()
+	{
+  		CLog *pLog = NULL;
+		pLog = CLog::Instance();
 
-	pLog->SetAutoDirectory(TRUE);
-	pLog->SetAutoDirectoryName(gf_GetModulePath() + L"Restartlog");
+		pLog->SetAutoDirectory(TRUE);
+		pLog->SetAutoDirectoryName(gf_GetModulePath() + L"Restartlog");
     
-  pLog->Log(L"로그생성!");
-}
+  		pLog->Log(L"로그생성!");
+	}
