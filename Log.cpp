@@ -14,7 +14,14 @@
 // INCLUDES
 //*********************************************************************
 
-#include "stdafx.h"
+/////////////////////////////////
+//!! Visual Studio 2012/ 2013
+//#include "stdafx.h"
+//!! Visual Studio 2019
+#include "pch.h"
+/////////////////////////////////
+
+
 #include "Log.h"
 #include <io.h>		//access
 
