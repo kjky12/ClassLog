@@ -22,6 +22,11 @@ URL : https://kjk92.tistory.com/52
 		pLog->SetAutoDirectoryName(gf_GetModulePath() + L"Restartlog");
     
   		pLog->Log(L"로그생성!");
+		
+		//! 로그 앞 시간 표시!
+		g_pLog->EnableTimestamp(TRUE);
+
+		g_pLog->Log(L"로그 클래스 데이터 입력!!");
 	}
 
 
